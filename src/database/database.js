@@ -5,7 +5,8 @@ const connect = async () => {
   try {
     await mongoose.connect(
       process.env.MONGODB_URI ||
-        "mongodb+srv://it4409:it4409-soict@lamdb-crud.qd3s7vv.mongodb.net/?retryWrites=true&w=majority"
+        "mongodb+srv://it4409:it4409-soict@lamdb-crud.qd3s7vv.mongodb.net/?retryWrites=true&w=majority",
+      { dbName: "Group6" }
     );
     console.log("Connected to MongoDB");
 
